@@ -79,7 +79,7 @@ flowchart TD
     F --> G[fraud_detection_predictions.csv]
     G --> H[SQL fraud analytics layer]
     H --> I[Power BI monitoring dashboard]
-    I --> J[Business decisions: executive monitoring, alert quality, investigation prioritization]
+    I --> J[Business decisions: executive monitoring, alert quality and investigation prioritization]
 ```
 
 ## Repository Flow
@@ -89,10 +89,8 @@ flowchart TD
 3. **SQL layer** transforms model outputs into fraud monitoring KPIs and investigation queries.
 4. **Power BI dashboard** presents executive and operational monitoring views.
 5. **README** explains business context, methodology, results and project impact.
-```
 
 ---
-
 # Python & Machine Learning Workflow
 
 ## 1. Data Understanding & Exploration
