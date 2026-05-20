@@ -1,8 +1,7 @@
-# fraud-detection-financial-crime-monitoring
-End-to-end Fraud Detection &amp; Financial Crime Monitoring project using Python, Machine Learning, SQL and Power BI.
+
 
 # Fraud Detection & Financial Crime Monitoring Analytics
-### End-to-End Fraud Analytics Pipeline | Python • SQL • Power BI • Machine Learning
+### End-to-End Fraud Analytics Pipeline | Python • SQL • Power BI • Machine Learning • Big Data
 
 ---
 
