@@ -69,22 +69,26 @@ Each row represents a single financial transaction.
 
 # Project Architecture
 
-```text
-Raw Transaction Dataset
-        ↓
-Python Fraud Detection Pipeline
-        ↓
-Feature Engineering & Leakage Review
-        ↓
-Fraud Probability Scoring
-        ↓
-Prediction Export CSV
-        ↓
-SQL Fraud Analytics Layer
-        ↓
-Power BI Monitoring Dashboards
-        ↓
-Operational Investigation Workflow
+```mermaid
+flowchart TD
+    A[Raw financial transaction data] --> B[Python fraud detection pipeline]
+    B --> C[Data cleaning and EDA]
+    C --> D[Feature engineering]
+    D --> E[Leakage detection and clean model selection]
+    E --> F[Fraud probability scoring]
+    F --> G[fraud_detection_predictions.csv]
+    G --> H[SQL fraud analytics layer]
+    H --> I[Power BI monitoring dashboard]
+    I --> J[Business decisions: executive monitoring, alert quality, investigation prioritization]
+```
+
+## Repository Flow
+
+1. **Python notebook** builds the fraud detection model and exports prediction outputs.
+2. **CSV output** stores model predictions, actual labels and fraud probability scores.
+3. **SQL layer** transforms model outputs into fraud monitoring KPIs and investigation queries.
+4. **Power BI dashboard** presents executive and operational monitoring views.
+5. **README** explains business context, methodology, results and project impact.
 ```
 
 ---
@@ -328,6 +332,37 @@ Fraud-Detection-Project/
 * Business Intelligence & Dashboarding
 * Operational Risk Thinking
 * End-to-End Analytics Pipeline Design
+
+---
+
+---
+
+# Business Impact
+
+This project was designed as a fraud analytics and operational risk monitoring workflow, not only as a machine learning classification exercise. The objective is to help a financial institution or fintech detect suspicious transactions, prioritize investigations and monitor fraud exposure.
+
+## Key Outcomes
+
+- **High fraud detection coverage:** the final model detects the large majority of confirmed fraud cases, reducing undetected fraud exposure.
+- **Financial exposure monitoring:** fraud amount analysis shows how much fraudulent value was detected versus missed.
+- **Alert prioritization:** fraud probability scores allow analysts to investigate the highest-risk transactions first.
+- **Operational workload visibility:** false positives are measured to understand investigation workload and alert quality.
+- **Transaction-type risk segmentation:** TRANSFER and CASH_OUT transactions are identified as the most fraud-sensitive categories.
+- **Executive reporting:** SQL outputs and Power BI dashboards convert model predictions into KPIs understandable by fraud, risk and management teams.
+
+## Business Trade-Off
+
+The selected approach intentionally prioritizes **recall** over precision. In fraud detection, missing fraudulent transactions can create direct financial losses and operational risk. A higher number of false positives is therefore acceptable when the business objective is to minimize missed fraud and support manual investigation prioritization.
+
+## Operational Use Case
+
+The workflow can support a fraud operations team by:
+
+1. scoring new transactions,
+2. ranking alerts by fraud probability,
+3. monitoring fraud exposure by transaction type,
+4. reviewing missed fraud and false positive patterns,
+5. adjusting thresholds based on analyst capacity and risk appetite.
 
 ---
 
