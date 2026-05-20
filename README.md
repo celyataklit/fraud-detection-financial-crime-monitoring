@@ -239,15 +239,15 @@ The dashboards were built to simulate real fraud monitoring workflows used in fi
 
 ## Executive Fraud Monitoring
 
-![Executive Dashboard](images/executive_dashboard.png)
+![Executive Dashboard](Executive_dashboard.png)
 
 ## Model Performance & Alert Quality
 
-![Model Performance](images/model_performance.png)
+![Model Performance](Model_Performance.png)
 
 ## Investigation Prioritization
 
-![Investigation Dashboard](images/investigation_dashboard.png)
+![Investigation Dashboard](investigation_dashboard.png)
 
 ---
 
