@@ -214,9 +214,6 @@ This reproduces the type of analytics commonly performed by fraud operations and
 
 ---
 
-# Power BI Dashboards
-
-The Power BI environment was designed for operational and executive fraud monitoring.
 
 # Power BI Dashboards
 
