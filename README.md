@@ -121,6 +121,15 @@ The objective was to reproduce signals typically used in fraud monitoring enviro
 
 ---
 
+### Key Features
+- Fraud Risk Scoring
+- Alert Prioritization
+- Transaction Monitoring
+- Predictive Analytics
+- Operational KPI Monitoring
+
+---
+
 ## 3. Leakage Detection & Model Cleaning
 
 A major part of the project focused on identifying leakage-prone variables.
