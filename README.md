@@ -218,37 +218,37 @@ This reproduces the type of analytics commonly performed by fraud operations and
 
 The Power BI environment was designed for operational and executive fraud monitoring.
 
+# Power BI Dashboards
+
+The Power BI environment was designed for operational and executive fraud monitoring.
+
 ## Dashboard Pages
 
 ### 1. Executive Fraud Monitoring
 
 High-level fraud KPIs and exposure indicators.
 
+![Executive Dashboard](images/Executive_dashboard.png)
+
+---
+
 ### 2. Model Performance & Alert Quality
 
 Evaluation of fraud detection efficiency and operational trade-offs.
+
+![Model Performance](images/Model_Performance.png)
+
+---
 
 ### 3. Operational Investigation Prioritization
 
 Identification and prioritization of high-risk alerts requiring investigation.
 
-The dashboards were built to simulate real fraud monitoring workflows used in fintech and payment environments.
+![Investigation Dashboard](images/investigation_dashboard.png)
 
 ---
 
-# Dashboard Preview
-
-## Executive Fraud Monitoring
-
-![Executive Dashboard](Executive_dashboard.png)
-
-## Model Performance & Alert Quality
-
-![Model Performance](Model_Performance.png)
-
-## Investigation Prioritization
-
-![Investigation Dashboard](investigation_dashboard.png)
+The dashboards were built to simulate real fraud monitoring workflows used in fintech and payment environments.
 
 ---
 
